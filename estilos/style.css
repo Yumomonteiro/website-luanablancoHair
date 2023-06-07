@@ -1,0 +1,130 @@
+@font-face {
+    font-family: lato;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: lato-light;
+    src: url(/fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: lato-bold;
+    src: url(/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: lato-italic;
+    src: url(/fonts/Lato/Lato-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+  
+}
+
+body {
+    --primary-color:#435934;
+    --secundary-color:#BF9D73;
+    --third-color:#8C5230;
+    --four-color:#40271E;
+    --auxiliar-color:#B8BEBF;
+    color: var(--primary-color);
+    color: var(--secundary-color);
+    color: var(--third-color);
+    color: var(--four-color);
+    color: var(--auxiliar-color);
+    
+    
+}
+
+header {
+    height: 150px;
+    color: #40271e00;
+
+    
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 150px;
+    
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav > a > img {
+    width:110px;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left-nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav > ul > li {
+    list-style-type: none;
+    padding: 0px 15px;
+    border-left: 1px solid white;
+}
+
+.left-nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.left-nav > ul > li >  :hover {
+    color: black;
+    background-color: white;
+    transition: all;
+    transition-duration: .4s;
+}
+
+#btn-nav {
+    background-color: #8C5230;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'lato-bold';
+}
+
+#btn-nav:hover {
+    cursor: pointer;
+    background-color: #8c5230ef;
+    transition: all;
+    transition-duration: .4s;
+}
+
+#search-icon {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+
+#search-text {
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 5px;
+}
